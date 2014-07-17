@@ -59,7 +59,7 @@ That notwithstanding, the line for installing `nltk` leads to the following erro
     Storing debug log for failure in /Users/bobtodd/.pip/pip.log
 
 
-As it turns out, this error was encountered once before -- [by me](nltk-err)!  So I've tried the solution proposed there, namely going directly to the source file.
+As it turns out, this error was encountered once before -- [by me](nltk-err)![^1]  So I've tried the solution proposed there, namely going directly to the source file.
 
     pip install https://pypi.python.org/packages/source/n/nltk/nltk-3.0.0b1.tar.gz
 
@@ -75,3 +75,5 @@ That should do it for now.
 [bs4]: http://www.crummy.com/software/BeautifulSoup/bs4/doc/
 [nltk]: http://www.nltk.org/
 [nltk-err]: https://groups.google.com/forum/#!topic/nltk-users/5hojEAby6Vo
+
+[^1]: I'm not sure why that link fails, so I'll paste the URL here so you can copy it into the browser's search bar (`https://groups.google.com/forum/#!topic/nltk-users/5hojEAby6Vo`).
