@@ -74,4 +74,4 @@ That should do it for now.
 [numpy]: http://www.numpy.org/
 [bs4]: http://www.crummy.com/software/BeautifulSoup/bs4/doc/
 [nltk]: http://www.nltk.org/
-[nltk-err]: https://groups.google.com/forum/#!msg/nltk-users/5hojEAby6Vo/uXgdgTaLwLAJ
+[nltk-err]: https://groups.google.com/forum/#!topic/nltk-users/5hojEAby6Vo
