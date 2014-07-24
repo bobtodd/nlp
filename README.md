@@ -60,7 +60,7 @@ That notwithstanding, the line for installing `nltk` leads to the following erro
     Storing debug log for failure in /Users/bobtodd/.pip/pip.log
 
 
-As it turns out, this error was encountered once before -- [by me][nltk-err][^1]!  So I've tried the solution proposed there, namely going directly to the source file.
+As it turns out, this error was encountered once before -- [by me][nltk-err]!  So I've tried the solution proposed there, namely going directly to the source file.
 
     pip install https://pypi.python.org/packages/source/n/nltk/nltk-3.0.0b1.tar.gz
 
@@ -72,7 +72,7 @@ That should do it for now.
 Adding Tag Cloud Functionality
 ------------------------------
 
-Finally, we want to install [pytagcloud][pytag] to handle making word-clouds.  But it seems that has a list of requirements, including `simplejson`, which can be installed easily via `pip`, and `pygame`, which seems like it's going to be a pain: see [here][pygame-install], and maybe a better version [here][pygame-install-2][^2].
+Finally, we want to install [pytagcloud][pytag] to handle making word-clouds.  But it seems that has a list of requirements, including `simplejson`, which can be installed easily via `pip`, and `pygame`, which seems like it's going to be a pain: see [here][pygame-install], and maybe a better version [here][pygame-install-2][^1].
 
     brew install sdl sdl_image sdl_mixer sdl_ttf portmidi
 
@@ -105,6 +105,4 @@ Let's see if that works...
 [pygame-install-vid]: http://www.youtube.com/watch?v=L0Cl4Crg7FE "Video for installing Pygame"
 [xquartz]: http://xquartz.macosforge.org
 
-[^1]: I'm not sure why that link fails, so I'll paste the URL here so you can copy it into the browser's search bar (`https://groups.google.com/forum/#!topic/nltk-users/5hojEAby6Vo`).
-
-[^2]: There's even a reference to straight-up Homebrew installation [here](pygame-install-3), but I haven't determined if I can get it to play with Python 3 yet.  Moreover, if you scroll down, you'll find references to the need to install Mercurial, which seems weird.  And then it ultimately reverts to installing Pygame with `pip`.  The `pip` version would be preferable, which seems to be what the [Coding 2 Learn](pygame-install-2) post gets at.  Ah, this version has the Mercurial bit as well: evidently Pygame comes as a Mercurial repo.
+[^1]: There's even a reference to straight-up Homebrew installation [here](pygame-install-3), but I haven't determined if I can get it to play with Python 3 yet.  Moreover, if you scroll down, you'll find references to the need to install Mercurial, which seems weird.  And then it ultimately reverts to installing Pygame with `pip`.  The `pip` version would be preferable, which seems to be what the [Coding 2 Learn](pygame-install-2) post gets at.  Ah, this version has the Mercurial bit as well: evidently Pygame comes as a Mercurial repo.
