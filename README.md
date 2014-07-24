@@ -8,15 +8,15 @@ Environment
 
 For ease of reconstructing things when stuff breaks, I have to delete everything, and then I have to rebuild from scratch, I'll write here some notes on the running environment for this project.
 
-This project is based on [Python](python), with help from the following packages.
+This project is based on [Python][python], with help from the following packages.
 
-* [Beautiful Soup](bs4)
-* [NLTK](nltk)
-* [pytagcloud](pytag)
+* [Beautiful Soup][bs4]
+* [NLTK][nltk]
+* [pytagcloud][pytag]
 
-I'm sandboxing this project in a Python virtual environment set up by [Pyenv](pyenv).  And of course I'm writing it in an [IPython](ipython) notebook, so you'll need to install that for things to work.
+I'm sandboxing this project in a Python virtual environment set up by [Pyenv][pyenv].  And of course I'm writing it in an [IPython][ipython] notebook, so you'll need to install that for things to work.
 
-Ultimately I'll install [NumPy](numpy), so you'll need that.  That requires a fortran compiler, so make sure you've already done the following with [Homebrew](brew):
+Ultimately I'll install [NumPy][numpy], so you'll need that.  That requires a fortran compiler, so make sure you've already done the following with [Homebrew][brew]:
 
     brew install gfortran
 
@@ -46,12 +46,12 @@ This also installs `gnureadline`, `numpydoc`, `Sphinx`, `jinja2`, `docutils`, `m
     ipython qtconsole --pylab=inline
     ipython notebook --pylab=inline
 
-Now we can finally install the NLPish stuff, specifically [NLTK](nltk) and [Beautiful Soup 4](bs4):
+Now we can finally install the NLPish stuff, specifically [NLTK][nltk] and [Beautiful Soup 4][bs4]:
 
     pip install beautifulsoup4
     pip install -U nltk
 
-As I've come to expect, an error has to occur somewhere, and this time it's with `pip install -U nltk`.  For some reason, the [NLTK website](nltk) says this should be prefaced by `sudo`.  I don't see why.  As I understand it, this goes against a lot of the underlying principles of the package manager system in the first place, and here it goes against the idea of a virtual environment in the second.
+As I've come to expect, an error has to occur somewhere, and this time it's with `pip install -U nltk`.  For some reason, the [NLTK website][nltk] says this should be prefaced by `sudo`.  I don't see why.  As I understand it, this goes against a lot of the underlying principles of the package manager system in the first place, and here it goes against the idea of a virtual environment in the second.
 
 That notwithstanding, the line for installing `nltk` leads to the following error:
 
@@ -60,17 +60,23 @@ That notwithstanding, the line for installing `nltk` leads to the following erro
     Storing debug log for failure in /Users/bobtodd/.pip/pip.log
 
 
-As it turns out, this error was encountered once before -- [by me](nltk-err)[^1]!  So I've tried the solution proposed there, namely going directly to the source file.
+As it turns out, this error was encountered once before -- [by me][nltk-err][^1]!  So I've tried the solution proposed there, namely going directly to the source file.
 
     pip install https://pypi.python.org/packages/source/n/nltk/nltk-3.0.0b1.tar.gz
 
 That seems to work.
 
-Finally, we want to install [pytagcloud](pytag) to handle making word-clouds.  But it seems that has a list of requirements, including `simplejson`, which can be installed easily via `pip`, and `pygame`, which seems like it's going to be a pain: see [here](pygame-install), and maybe a better version [here](pygame-install-2)[^2].
+That should do it for now.
+
+
+Adding Tag Cloud Functionality
+------------------------------
+
+Finally, we want to install [pytagcloud][pytag] to handle making word-clouds.  But it seems that has a list of requirements, including `simplejson`, which can be installed easily via `pip`, and `pygame`, which seems like it's going to be a pain: see [here][pygame-install], and maybe a better version [here][pygame-install-2][^2].
 
     brew install sdl sdl_image sdl_mixer sdl_ttf portmidi
 
-Supposedly we need to install [XQuartz](xquartz).  Then we continue as follows:
+Supposedly we need to install [XQuartz][xquartz].  Then we continue as follows:
 
 	pyenv deactivate
 	brew tap homebrew/headonly
@@ -83,8 +89,6 @@ Supposedly we need to install [XQuartz](xquartz).  Then we continue as follows:
 	pip install -U pytagcloud
 
 Let's see if that works...
-
-That should do it for now.
 
 [brew]: http://brew.sh/
 [python]: https://www.python.org/
