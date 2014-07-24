@@ -73,7 +73,7 @@ Adding Tag Cloud Functionality
 
 I had originally wanted to work completely within Python, and so I tried installing [PyTagCloud][pytag].  But after a harrowing process ([see here](errata.md)), it turns out that PyTagCloud hasn't made it to the era of Python 3.  So it's ultimately a fool's errand to install that.  I still have a lot of packages to uninstall after that wild goose chase.
 
-Another idea was to use Andreas Mueller's [WordCloud][wc-gh], discussed in a blog post [here][pboo-wc].  But it turns out that it's dependence on outdated Python libraries (again [see here](errata.md) means that this winds up in failure.
+Another idea was to use Andreas Mueller's [WordCloud][wc-gh], discussed in a blog post [here][pboo-wc].  But it turns out that it's dependence on outdated Python libraries (again [see here](errata.md)) means that this winds up in failure.
 
 
 [brew]: http://brew.sh/
