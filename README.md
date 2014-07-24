@@ -72,7 +72,7 @@ That should do it for now.
 Adding Tag Cloud Functionality
 ------------------------------
 
-Finally, we want to install [pytagcloud][pytag] to handle making word-clouds.  But it seems that has a list of requirements, including `simplejson`, which can be installed easily via `pip`, and `pygame`, which seems like it's going to be a pain: see [here][pygame-install], and maybe a better version [here][pygame-install-2][^1].
+Finally, we want to install [pytagcloud][pytag] to handle making word-clouds.  But it seems that has a list of requirements, including `simplejson`, which can be installed easily via `pip`, and `pygame`, which seems like it's going to be a pain: see [here][pygame-install], and maybe a better version [here][pygame-install-2].[^1]
 
     brew install sdl sdl_image sdl_mixer sdl_ttf portmidi
 
