@@ -13,10 +13,16 @@ This repo is designed to hold a few simultaneous projects happening at the same 
 
 For ease of reconstructing things when stuff breaks, I have to delete everything, and then I have to rebuild from scratch, I'll write here some notes on the running environment for this project.
 
-This project is based on [Python][python], with help from the following packages.
+This rap project is based on [Python][python], with help from the following packages.
 
 * [Beautiful Soup][bs4]
 * [NLTK][nltk]
+
+Meanwhile the Latin project will also employ
+
+* [Pandas][pandas]
+
+to ease the manipulation of tabulated data.
 
 I'm sandboxing this project in a Python virtual environment set up by [Pyenv][pyenv].  And of course I'm writing it in an [IPython][ipython] notebook, so you'll need to install that for things to work.
 
@@ -37,6 +43,7 @@ Within that environment, we'll install our packages.
     pip install nose
     pip install numpy
     pip install matplotlib
+    pip install pandas
     
     # For IPython
     pip install pyzmq
@@ -88,6 +95,7 @@ Another idea was to use Andreas Mueller's [WordCloud][wc-gh], discussed in a blo
 [bs4]: http://www.crummy.com/software/BeautifulSoup/bs4/doc/
 [nltk]: http://www.nltk.org/
 [nltk-err]: https://groups.google.com/forum/#!topic/nltk-users/5hojEAby6Vo
+[pandas]: http://pandas.pydata.org/
 [pytag]: https://pypi.python.org/pypi/pytagcloud
 [pboo-wc]: http://peekaboo-vision.blogspot.com/2012/11/a-wordcloud-in-python.html "Andreas Mueller's description of creating a word-cloud generator"
 [wc-gh]: https://github.com/amueller/word_cloud "GitHub repo for Mueller's word-count generator"
