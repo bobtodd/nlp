@@ -50,6 +50,7 @@ Within that environment, we'll install our packages.
     pip install pygments
     pip install -U PySide
     pyside_postinstall.py -install
+    pip install jsonschema
     pip install ipython[all]
 
 This also installs `gnureadline`, `numpydoc`, `Sphinx`, `jinja2`, `docutils`, `markupsafe`.  Run the following to check that everything essential is working correctly:
