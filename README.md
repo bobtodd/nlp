@@ -1,10 +1,15 @@
-nlp
-===
+# nlp
 
 A sandbox for playing around with various script ideas related to linguistics
 
-Environment
------------
+## Basic Projects
+
+This repo is designed to hold a few simultaneous projects happening at the same time in various states of disarray.  Here's a short outline:
+
+* **Rap**: I'm trying to munge rap lyrics to see what I can discover.
+* **Latin**: I'd like to find a convenient way of creating study materials for Latin.  In particular I'd like to take some data found surfing the web and turn it magically into material easily imported into flashcard programs.  Wish me luck!
+
+## Environment
 
 For ease of reconstructing things when stuff breaks, I have to delete everything, and then I have to rebuild from scratch, I'll write here some notes on the running environment for this project.
 
@@ -68,8 +73,7 @@ That seems to work.
 That should do it for now.
 
 
-Adding Tag Cloud Functionality
-------------------------------
+## Adding Tag Cloud Functionality
 
 I had originally wanted to work completely within Python, and so I tried installing [PyTagCloud][pytag].  But after a harrowing process ([see here](errata.md)), it turns out that PyTagCloud hasn't made it to the era of Python 3.  So it's ultimately a fool's errand to install that.  I still have a lot of packages to uninstall after that wild goose chase.
 
